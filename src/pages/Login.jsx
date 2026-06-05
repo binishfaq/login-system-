@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../services/api";
+import{useAuth} from"../context/AuthContext";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const navigate = useNavigate();
+  const {login} = useAuth();
 
   const handlelogin = async (e) => {
     e.preventDefault();
@@ -18,6 +20,7 @@ const Login = () => {
       });
 
       if (res.data.success) {
+        login(res.data.user, res.data.token)
         alert("Login Successful");
 
         localStorage.setItem("user", JSON.stringify({ email }));
