@@ -1,6 +1,6 @@
 # 🔐 Login System (Full Stack)
 
-A simple full-stack authentication system built with **React.js**, **Node.js**, **Express**, and **MySQL / MongoDB (extendable)**.  
+A simple full-stack authentication system built with **React.js**, **Node.js**, **Express**, and **MongoDB**.  
 This project includes user **registration, login, and dashboard with local storage session handling**.
 
 ---
@@ -14,7 +14,7 @@ This project includes user **registration, login, and dashboard with local stora
 - Local Storage Session Handling
 - Protected Dashboard (basic)
 - Backend API with Express
-- Database Integration (MySQL / MongoDB ready structure)
+- Database Integration
 
 ---
 
@@ -29,6 +29,11 @@ This project includes user **registration, login, and dashboard with local stora
 ### Backend:
 - Node.js
 - Express.js
-- MySQL (current setup) / MongoDB (future upgrade)
+- MongoDB
 - CORS middleware
 
+
+Zain Bin Ishfaq
+
+
+- if you like my project gave me a start
